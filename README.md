@@ -114,4 +114,44 @@ System. out. println (year+" is not a leap year");}
 		    
 }
 }
+//Question 5//
+
+// x number finder //
+import java .util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+
+
+
+Scanner sc=new Scanner (System.in);
+System.out.println("Enter your number : ");
+
+int num=sc.nextInt();
+
+while (num>9) {
+
+int sum = 0;
+
+while (num != 0) {
+
+sum = sum + num % 10;
+
+num = num / 10;
+
+} num= sum;}
+
+System.out.println("Sum of all digits of given number is : " + num);
+
+if (num == 1) {
+
+System.out.println("Given number is a X number.");
+
+}
+
+else {
+
+System.out.println("Given number is not a X number.");}
+
+}}
 
