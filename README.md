@@ -155,3 +155,45 @@ System.out.println("Given number is not a X number.");}
 
 }}
 
+
+
+
+// Question 6 //
+
+
+
+import java. util. *;
+
+public class Main {
+	
+public static int check(int n){
+	    	int sum=0;
+	while(n!=0){
+	int rem=n%10;
+	sum=rem+sum;
+    n=n/10;
+		
+		}		
+System. out. println ("sum = "+sum);
+								
+  return sum;
+	    	}
+	
+public static void main(String[] args) {
+Scanner sc= new Scanner(System.in);
+
+	
+System. out. println ("Enter your number: ");
+	int n=sc.nextInt();
+int result=check(n);
+	if(n%result==0){
+	    System. out. println ("Yes It Is a Harshad Number ");
+	    	}
+	    	else{
+	    	    System. out. println ("No It Is Not a Harshad Numbe");
+	    	}
+ 
+}
+}
+
+
