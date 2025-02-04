@@ -195,5 +195,30 @@ int result=check(n);
  
 }
 }
+//Question 7 //
+
+//triangle area using herons formula//
+import java.util.*;
+import java.lang. Math;
+class Main
+{
+    public static void main(String[] args)
+    {
+		Scanner sc = new Scanner(System.in);
+ 
+System.out.println("Enter First side :");
+		double  a = sc.nextDouble();        
+		System.out.println("Enter Second side:");
+		double b =sc.nextDouble();
+		System.out.println("Enter third side :");
+				double c=sc.nextDouble();
+			
+double s=(a+b+c) /2;
+			double area =Math.sqrt(s*(s-a)*(s-b)*(s-c));
+			System.out.println("area ="+ area);		  
+    }  
+}
+
+
 
 
