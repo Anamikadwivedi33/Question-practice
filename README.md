@@ -2,9 +2,9 @@
 Here I am practice coding question
          
           
-          //start
+//start//
          
-// Find factors of a number
+// Find factors of a number//
 
 import java.util.Scanner;
 public class Main {
@@ -218,6 +218,34 @@ double s=(a+b+c) /2;
 			System.out.println("area ="+ area);		  
     }  
 }
+
+
+//Question 8//
+
+// vowel or consonant //
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+ System.out.print("Enter a character: ");
+        char ch = scanner.next().charAt(0);
+ if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'
+ 
+ ||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'
+  ){
+    System. out. println (" vowel")  ;}
+    else if(ch>='a'&& ch<='z'|| ch>='A'&& ch<='Z'){
+        System. out. println("consonant");}
+   
+else{
+        System. out. println ("Invalid");}
+    }
+}
+
+
 
 
 
