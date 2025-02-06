@@ -245,6 +245,58 @@ else{
     }
 }
 
+// Question 9//
+
+//Quadratic //
+
+import java.util.*;
+import java. lang. Math. *;
+class Main
+{
+    public static void main(String[] args)
+    {
+		Scanner sc = new Scanner(System.in);
+ double r1=0;
+ double r2= 0;
+		System.out.println("Enter the First side :");
+		double  a = sc.nextDouble();        
+		System.out.println("Enter the Second side:");
+		double b =sc.nextDouble();
+		System.out.println("Enter the third side :");
+			double c = sc.nextDouble();  
+			
+double d= b*b -4*a*c;
+			if(d>0){
+			    
+  r1= (-b+Math.sqrt(d))/(2*a);
+ r2= (b+Math.sqrt(d))/(2*a);	 
+ 
+   System. out. println ("Roots are real");
+          
+System.out.println("Root1="+ r1+ " Root2 ="+r2);	    
+			}
+			
+else if(  d==0){
+			
+ r1= -b/(2*a);
+ 	    
+ System. out. println ("Roots are real and equal");	    
+System.out.println("Root="+ r1 );		
+						}	
+			else {
+
+ 
+
+System.out.println("Roots are imaginary");
+ 
+
+}
+
+}
+			    
+}
+
+
 
 
 
