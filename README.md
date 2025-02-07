@@ -297,6 +297,46 @@ System.out.println("Roots are imaginary");
 }
 
 
+//Question 10//
+
+
+
+import java. util. *;
+class Student{
+    String name;
+    int age ;
+    
+//Using constructor
+    public Student(String name,int age ){
+        
+ this.name =name ;
+        this.age =age ;
+          }
+    
+ public  void display(){
+        
+ System.out.println("Name =" + this.name);
+        System.out.println ("Age =" + this.age);    
+}
+}
+public class Main {
+	public static void main(String[] args) {
+Scanner sc =new Scanner(System.in) ;	   
+System.out.println ("Enter your name: ");
+ 
+   String name = sc. nextLine();
+   System.out.println ("Enter your age :");
+int age =sc.nextInt ();
+	    
+Student John =new Student(name, age);
+	
+John.display ();
+		}
+}
+
+
+
+
 
 
 
