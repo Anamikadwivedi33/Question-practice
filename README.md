@@ -336,6 +336,37 @@ John.display ();
 
 
 
+//Question 11//
+
+//method //
+import java . util. *;
+
+public class Main {
+
+public static int addition ( int a, int b){
+		int sum =a+b;
+		 System. out. println ("sum = "+sum);
+		return sum;
+		
+}
+		
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	
+System. out. println ("Enter your first value");	
+	int a= sc. nextInt();	
+	
+	
+System. out. println ("Enter your second value");	
+	int b= sc. nextInt();
+		
+addition(a, b) ;
+		
+}
+}
+
+
+
 
 
 
