@@ -2,7 +2,7 @@
 Here I am practice coding question//
          
           
-//start//
+//start.//
          
 // Find factors of a number//
 
