@@ -7,7 +7,107 @@ Sadhvi{
 
 }
 
-Anamika {hii
+Anamika {
+
+
+import sqlite3
+conn sqlite3.connect('Tutorial.db')
+c= conn.cursor()
+
+
+c. execute ('''CREATE TABLE IF NOT  EXISTS bmi ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, weight REAL, height REAL, bmi REAL, category TEXT )''') 
+
+ execute ('''CREATE TABLE IF NOT  EXISTS bmr( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, weight REAL, height REAL, bmi REAL, category TEXT )''') 
+
+c. execute ('''CREATE TABLE IF NOT EXISTS blood_report ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, hemoglobin_level REAL, rbc_count REAL, wbc_count REAL, platelet_count REAL )''') 
+
+c. execute ('''CREATE TABLE IF NOT EXISTS water_intake ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, water_intake REAL, date TEXT ) ''') 
+
+
+def personal detalil (name,age,gender, phone_number,address ):
+
+c.execute('''INSERT INTO people VALUES(?, ?, ?,?,?), (name,age,gender, phone_number,address TEXT,
+)
+
+conn.commit()
+''') 
+
+def bmi_detalil (height weight,bmi ):
+
+c.execute('''INSERT INTO people VALUES(?, ?, ?,?,?), (height,weight, bmi
+) ''') 
+
+def waterintakedetalil ( weight,water_intake):
+
+c.execute('''INSERT INTO people VALUES(?, ?, ?,?,?), (weight,water_intake
+) ''') 
+
+
+def bmr_detalil ( weight,water_intake):
+
+c.execute('''INSERT INTO people VALUES(?, ?, ?,?,?), (weight,water_intake
+) ''') 
+
+
+def  bloodreport_detalil ( weight,water_intake):
+
+c.execute('''INSERT INTO people VALUES(?, ?, ?,?,?), (weight,water_intake
+) ''') 
+
+SELECT bmi.name, bmi.weight, bmi.height, bmi.bmi, bmi.category,
+
+blood_report.hemoglobin_level, blood_report.rbc_count, blood_report.wbc_count, blood_report.platelet_count,
+
+water_intake.water_intake, water intake.date FROM bmi INNER JOIN blood_report ON bmi.name = blood_report.name INNER JOIN water_intake ON bmi.name = water intake.name;
+
+
+
+
+*******
+SELECT
+
+pd.name,
+
+pd.age,
+
+pd.sex,
+
+bmi.weight,
+
+bmi.height,
+
+bmi.bmi,
+
+bmr.bmr,
+
+br.hemoglobin_level,
+
+br.rbc_count,
+
+wi.water_intake
+
+FROM
+
+personal_details pd
+
+INNER JOIN
+
+bmi ON pd.name = bmi.name
+
+INNER JOIN
+
+bmr ON pd.name = bmr.name
+
+INNER JOIN
+
+blood_report br ON pd.name
+
+br.name
+
+INNER JOIN
+
+water_intake wi ON pd.name wi.name;
+
 
 
 
