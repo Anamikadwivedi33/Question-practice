@@ -1,4 +1,24 @@
-@@@@Sanjana {
+@@@@Sanjana {print("Blood Normalized Report")
+print("-----------------------------------------")
+
+hemoglobin = float(input("Enter Hemoglobin (HbM) value: "))
+
+rbc = float(input("Enter Red Blood Cells (RBC) value: "))
+
+wbc = float(input("Enter White Blood Cells (WBC) value: "))
+
+platelets = float(input("Enter Platelets value: "))
+
+print("\nNormalized Report:")
+print("-------------------------------------")
+
+print(f"Hemoglobin (HbM): {'Low' if hemoglobin < 13.5 else 'High' if hemoglobin > 17.5 else 'Normal'}")
+
+print(f"Red Blood Cells (RBC): {'Low' if rbc < 4.32 else 'High' if rbc > 5.72 else 'Normal'}")
+
+print(f"White Blood Cells (WBC): {'Low' if wbc < 4.5 else 'High' if wbc > 11.0 else 'Normal'}")
+
+print(f"Platelets: {'Low' if platelets < 150 else 'High' if platelets > 450 else 'Normal'}")
 
 
 
