@@ -1,1 +1,216 @@
+//First program in Python
 
+print("Hello, World!!")
+
+a = 20
+b = 30
+print("The addition is: ",a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+a = int(input("Enter first value: "))
+b = int(input("Enter Second Value:"))
+print("The addition is: ",a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+a = 10
+a+=2
+print(a)
+a-=2
+print(a)
+a*=3
+print(a)
+a/=3
+print(a)
+
+
+a = "My name is Rohit"
+print("Rohit" in a)
+
+a = input("Enter intro: ")
+a = a.lower()
+print("rohit" in a)
+
+a=10
+b=20
+if(a>b):
+	print("A is greater")
+elif(a==b):
+	print("Both are equal")
+else:
+	print("B is greater")
+	
+
+
+
+a = int(input("Enter Number:"))
+if (a%2==0):
+	print("Even")
+else:
+	print("Odd!")
+	
+print(*range(2,51,2))
+
+a =13
+table="{}X{}={}"
+for i in range(1,11):
+	print(table.format(a,i,a*i))
+
+a = 1
+while True:
+	x = int(input("enter Value:"))
+	if(x>0):
+		print(x**2)
+	else:
+		break
+
+####### Static Chatbot ##########
+while True:
+	text=input("Enter Text: ")
+	text=text.lower()
+	if("hello" in text):
+		print("Hello! How are you")
+	elif("good morning" in text):
+		print("Good Morning! Have a nice day!!")
+	elif("goodbye" in text):
+		print("Good Bye!!")
+		break
+	else:
+		print("Unable to understand! Still Learning")
+
+
+
+
+#### Datetime ####
+
+import datetime
+
+x = datetime.datetime.now()
+
+print(x)
+
+## using from import ###
+
+from datetime import datetime
+
+x = datetime.now()
+
+print(x)
+
+
+
+
+
+from datetime import datetime
+import time
+for i in range(10):
+	x = datetime.now()
+	time.sleep(1)
+	print(x)
+
+from datetime import datetime
+def time():
+	x = datetime.now()
+	tm=x.strftime("%X")
+	return tm
+
+def date():
+	x = datetime.now()
+	dt=x.strftime("%x")
+	return dt
+print(time(),date())
+### chatbot wit datetime ###
+
+
+from datetime import datetime
+def time():
+	x = datetime.now()
+	tm=x.strftime("%X")
+	return tm
+
+def date():
+	x = datetime.now()
+	dt=x.strftime("%x")
+	return dt
+
+
+while True:
+	text=input("Enter Text: ")
+	text=text.lower()
+	if("hello" in text):
+		print("Hello! How are you")
+	elif("good morning" in text):
+		print("Good Morning! Have a nice day!!")
+	elif("time" in text):
+		print("Time:", time())
+	elif("date" in text):
+		print("Date:", date())
+	elif("goodbye" in text):
+		print("Good Bye!!")
+		break
+	else:
+		print("Unable to understand! Still Learning")
+
+import matplotlib.pyplot as plt
+
+LIST = [1,2,3,4.12,"Rohit"]
+Tuple = (1,2,3,4.12,"Rohit")
+set = {1,2,3,4.12,"Rohit"}
+dictionary = {"key": "value",}
+
+import matplotlib.pyplot as plt
+marks = [23,34,21,49,42]
+subject = ["EVS","Hindi","English","Maths","SST"]
+plt.bar(subject,marks)
+plt.title("Semester marks")
+plt.xlabel("Subject")
+plt.ylabel("Marks")
+plt.show()
+
+import matplotlib.pyplot as plt
+marks = [23,34,21,49,42]
+subject = ["EVS","Hindi","English","Maths","SST"]
+color=["Red","Green","Blue","pink","black"]
+plt.bar(subject,marks,color=color)
+plt.title("Semester marks")
+plt.xlabel("Subject")
+plt.ylabel("Marks")
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+data = [20,30,10,40]
+plt.pie(data)
+plt.show()
+
+
+pip install opencv-python
+
+Import cv2
+
+# To open camera
+
+
+import cv2
+cap=cv2.VideoCapture(0);
+while(True):
+    ret,frame=cap.read()
+    cv2.imshow('Video',frame)
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
+
+
+
+
+
+
+
+
+ 
